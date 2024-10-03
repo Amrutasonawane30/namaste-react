@@ -1,0 +1,69 @@
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACAjLh9HJCwiSlwViqpJaOF5/NP+kpOvR4HOQD/xjn/hBwAAAKB1ezybdXs8
+mwAAAAtzc2gtZWQyNTUxOQAAACAjLh9HJCwiSlwViqpJaOF5/NP+kpOvR4HOQD/xjn/hBw
+AAAECXMKMYU1nkhb0DwgLk1njYbnCB1zp13mO8XgEIBvybryMuH0ckLCJKXBWKqklo4Xn8
+0/6Sk69Hgc5AP/GOf+EHAAAAHWFtcnV0YS5zb25hd2FuZS5yZ2FAZ21haWwuY29t
+-----END OPENSSH PRIVATE KEY-----
+Episode 1 
+
+											Ep 1 Part 1:
+
+Inception :
+	Inception is an extension for Visual Studio Code that helps you dive into information contained in text.
+Emmet :
+	Emmet is a plugin or developer tool kit that helps make your work faster and substantially enhances HTML and CSS workflows.
+CDN (Content Delivery Network) :
+	A content delivery network (CDN) is a network of interconnected servers that speeds up webpage loading for data-heavy applications.
+	Reduce bandwidth costs
+	Reduce page load time
+	Increase content availability
+	Improve website security
+Crossorign:
+	It is protocol that controls how web requests are handled across different URLS
+	The crossorigin attribute sets the mode of the request to an HTTP CORS(Cross-Origin Resource Sharing) Request.
+	A cross-origin request is a request for a resource (e.g. style sheets, iframes, images, fonts, or scripts) from another domain.
+
+Inject Below two links in your project body:
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+First file is core file of React algorithm framework which is written inside javascript
+Second file is useful for DOM React operations
+
+										Ep 1 Part 2 & 3:
+
+Create Index.html file 
+Copy Javascript code to App.js file create index.css file
+React.createElement:(further it will not be used)
+	createElement lets you create a React element. It serves as an alternative to writing JSX.
+	To create an element without JSX, call createElement with some type, props, and children:
+React-dom
+	The react-dom package provides DOM-specific methods that can be used at the top level of your app and as an escape hatch to get outside the React model if you need to.
+createRoot
+	createRoot lets you create a root to display React components inside a browser DOM node.
+render:
+	render renders a piece of JSX (“React node”) into a browser DOM node. This API will be removed in a future major version of React.
+In React 18, render was replaced by createRoot. Using render in React 18 will warn that your app will behave as if it’s running React 17
+
+										Ep 1 Part 4:
+
+In react createElement didn’t make problem easy. Make it Complex. So further it won’t used. Ex div under	div under div tag then problem looks messy. Parent to child child to sub child and sibling etc
+const parent = React.createElement("div", {id:"parent"},[
+  React.createElement("div", {id:"child"},[
+    React.createElement("h1",{},"I am H1 tag"),
+    React.createElement("h2",{},"I am h2 tag")
+
+  ]),
+ 
+  React.createElement("div", {id:"child"},[
+    React.createElement("h1",{},"I am H1 tag"),
+    React.createElement("h2",{},"I am h2 tag")
+
+  ])
+]
+);
+										Ep 1 Part 5:
+
+The sequence of file matters in code. Write react code before <script src=“./App.js></script>
+React is only working in div. React work on small element. So it is a library. No dependancy.
